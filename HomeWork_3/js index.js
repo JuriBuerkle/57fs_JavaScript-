@@ -27,10 +27,10 @@ const totalAge = starWarsHeroes.reduce((acc, hero) => acc + hero.age, 0);
 console.log(totalAge);
 
 //1.4 Повысьте возраст героев на 10 лет
-const plusTenAge = starWarsHeroes.map(hero => ({ ...hero, age: hero.age + 10 }));
+const plusTenAge = starWarsHeroes.map(hero => ({ ...hero, age: hero.age + 10 }));// создаем новый массив, где возраст каждого героя увеличен на 10 лет
 console.log(plusTenAge);
 
-plusTenAge.forEach ((hero) =>hero.age += 100);
+plusTenAge.forEach ((hero) =>hero.age += 100);// добавляем 100 лет к каждому герою
 console.log(plusTenAge);
 
 
@@ -38,12 +38,12 @@ console.log(plusTenAge);
 //`[{ name: "Darth Vader", isJedi: false, age: 50 }]`
 const newStarWarsHeroes = starWarsHeroes.map(hero =>
     hero.name === "Anakin Skywalker"
-        ? { name: "Darth Vader", isJedi: false, age: 50 }
-        : hero);
+        ? { name: "Darth Vader", isJedi: false, age: 50 } 
+        : hero);// заменяем "Anakin Skywalker" на "Darth Vader"
 
 console.log(newStarWarsHeroes);
 
 //1.6 Создайте на основе старого массива новый массив объектов по образу:
 //[{ name: "Luke Skywalker", isJedi: true }, { name: "Han Solo", isJedi: false }, ]`
-const restStarWarsHeroes = starWarsHeroes.map(({age, ...rest}) => rest);
+const restStarWarsHeroes = starWarsHeroes.map(({age, ...rest}) => rest);// создаем новый массив, исключая поле age
 console.log(restStarWarsHeroes);

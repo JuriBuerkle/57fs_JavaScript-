@@ -1,6 +1,5 @@
 // DOM - это документ, который представляет собой структуру HTML-страницы
 
-
 // ! DOM
 // методы работы с глобальным объектом document
 // * этот объект содержит всю информацию об элементах и их свойствах на странице
@@ -53,25 +52,26 @@ btnMinus.addEventListener("click", handleMinus);
 // ! DOM practice
 
 const heading = document.querySelector("h1");
-const btnCreate = document.querySelector('.btn-create')
+const btnCreate = document.querySelector(".btn-create");
 
 // подробная информация о найденном элементе
 /// console.dir(heading)
 
-heading.addEventListener('click', () => {
+heading.addEventListener("click", () => {
   heading.textContent = "Функции и DOM";
   heading.className = "heading";
   // создаем новый элемент
-  const p = document.createElement('p')
+  const p = document.createElement("p");
   // добавляем элементу текст
-  p.textContent = 'Этот элемент мы добавили через метод createElement()'
-  console.log(p)
+  p.textContent = "Этот элемент мы добавили через метод createElement()";
+  console.log(p);
   // добавили элемент на страницу
-  document.body.append(p)
-})
+  document.body.append(p);
+});
 
-btnCreate.addEventListener('click', () => {
-  const img = document.createElement('img')
-  img.src = 'https://media.geeksforgeeks.org/wp-content/uploads/20241120143259875787/DOM-Tree1.webp'
-  document.body.append(img)
-})
+btnCreate.addEventListener("click", () => {
+  const img = document.createElement("img");
+  img.src =
+    "https://media.geeksforgeeks.org/wp-content/uploads/20241120143259875787/DOM-Tree1.webp";
+  document.body.append(img);
+});
