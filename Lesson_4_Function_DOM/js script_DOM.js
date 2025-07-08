@@ -59,7 +59,7 @@ const btnCreate = document.querySelector(".btn-create");
 
 heading.addEventListener("click", () => {
   heading.textContent = "Функции и DOM";
-  heading.className = "heading"; /
+  heading.className = "heading"; 
   // создаем новый элемент
   const p = document.createElement("p");
   // добавляем элементу текст
