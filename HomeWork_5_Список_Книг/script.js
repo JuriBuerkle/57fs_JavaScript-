@@ -22,6 +22,7 @@ const arrayBooks = [
   { title: "преступление и наказание", author: "ф.достоевский" },
 ];
 
+
 // Обработчик события для формы добавления книги
 bookForm.addEventListener("submit", (event) => {
   event.preventDefault(); // Отменяем стандартное поведение формы
@@ -42,8 +43,9 @@ bookForm.addEventListener("submit", (event) => {
         alert("Эта книга уже есть в списке !");
     } else {
         // Добавляем книгу в массив
+        arrayBooks.push(task);
     }
-    arrayBooks.push(task);
+
 // Создаем новый элемент списка
   const li = document.createElement("li");
 // Добавляем обработчик события для переключения стиля
