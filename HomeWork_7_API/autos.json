@@ -9,6 +9,7 @@
                 "interior" : "beige",
                 "car" : "black"
             }
+            "image": "https://example.com/bmw_x7.jpg"
         },
         {
             "id" : 2,
@@ -18,7 +19,8 @@
             "color" : {
                 "interior" : "red",
                 "car" : "white"
-            }
+            },
+            "image" : "https://example.com/mercedes_s500.jpg"
         },
         {
             "id" : 3,
@@ -28,7 +30,8 @@
             "color" : {
                 "interior" : "orange",
                 "car" : "blue"
-            }
+            },
+            "image" : "https://example.com/audi_rs7.jpg"
         },
         {
             "id" : 4,
@@ -38,7 +41,8 @@
             "color" : {
                 "interior" : "red",
                 "car" : "yellow"
-            }
+            },
+            "image" : "https://example.com/ferrari_sf90.jpg"
         }
     ]
 }
