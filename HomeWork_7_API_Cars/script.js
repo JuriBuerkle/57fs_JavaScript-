@@ -2,7 +2,7 @@ const carShowroom = document.getElementById("car-showroom");
 const carList = document.getElementById("car-list");
 const carImage = document.getElementById("car-image");
 
-fetch("https://juribuerkle.github.io/my_favorite_Cars/Cars.json")
+fetch(" https://juribuerkle.github.io/JSON_S/cars.json")
   .then((response) => response.json())
   .then((carsObj) => {
     console.log(carsObj);
@@ -16,3 +16,6 @@ fetch("https://juribuerkle.github.io/my_favorite_Cars/Cars.json")
     li.textContent = `${brand} ${model} (${year}) - ${color}`;
     carList.appendChild(li);
   });
+carShowroom();
+carList();
+carImage();
