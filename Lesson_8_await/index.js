@@ -1,7 +1,7 @@
 const productsList = document.getElementById("products-list")
 
 async function fetchProduct() {  // объявления асинхронной функции
-    const res = await fetch("https://api.escuelajs.co/api/v1/products");
+    const res = await fetch("https://api.escuelajs.co/api/v1/categories");
     // fetch- вернёт PROMIS 
     // await- раскроет 
     const products = await res.json();
