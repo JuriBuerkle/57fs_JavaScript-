@@ -2,6 +2,7 @@ const registerForm = document.getElementById("register-form");
 const messageEl = document.getElementById("message");
 
 registerForm.addEventListener("submit", (event) => {
+    event.preventDefault();
   const newUser = {
     name: event.target.name.value,
     email: event.target.email.value,
@@ -9,7 +10,8 @@ registerForm.addEventListener("submit", (event) => {
     avatar: event.target.avatar.value,
   };
 
-  fetchRegister(newUser);
+  console.log(newUser);
+  
 });
 
 async function fetchRegister(newUser) {
